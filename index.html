@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bootslander Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+  <script>
+    function initialize() {
+      var propertiPeta = {
+        center:new google.maps.LatLng(-6.174167, 106.842916),
+        zoom:9,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      
+      var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+      
+      // membuat Marker
+      var marker=new google.maps.Marker({
+          position: new google.maps.LatLng(-6.174167, 106.842916),
+          map: peta
+      });
+    
+    }
+    
+    // event jendela di-load  
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bootslander - v2.3.1
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Logo</span></a></h1>
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Beranda</a></li>
+          <li><a href="#gallery">Detail Promo</a></li>
+          <li><a href="#footer">Lokasi</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/header.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <div data-aos="zoom-out">
+            <h5 class="pt-5">Lorem ipsum dolor sit amet,<span> Senen Jaya</span> <br> consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad
+              minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              Duis autem vel eum iriure dolor in hendrerit in vulputate
+              velit esse molestie consequat, vel illum dolore eu feugiat
+              nulla .
+              Duis autem vel eum iriure dolor in hendrerit in vulputate
+              velit esse molestie consequat, vel illum dolore eu feugiat
+              nulla molestie consequat, vel illum dolore.</h5>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4">
+          <div data-aos="zoom-out">
+            <h1 class="pt-5 text-left">Saya ingin mendapatkan <br> Informasi <span>Senen Jaya</span></h1>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="No. Telp" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="email" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Pesan"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center"><button type="submit" class="btn-get-started"> Kirim Pesan</button></div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+        </div>
+
+        <div class="row no-gutters" data-aos="fade-left">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+              <a href="assets/img/gallery/gallery-1.jpg" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+              <a href="assets/img/gallery/gallery-2.jpg" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+              <a href="assets/img/gallery/gallery-3.jpg" class="venobox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <p>Alasan Memilih Senen Jaya 1 & 2</p>
+        </div>
+
+        <div class="container-fluid">
+        <div class="row" data-aos="fade-left">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Lokasi</h4>
+                <span>Lokasinya berada di pusat kota Jakarta dan dikelilingi oleh beragam akses terbaik. Mulai dari halte TransJakarta, terminal, dan stasiun.</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nilai Investasi Tinggi</h4>
+                <span>Dikunjungi oleh ratusan ribu
+                  bahkan hingga jutaan pengunjung setiap minggunya, kios Pasar Senen Jaya 1&2 memiliki nilai investasi yang sangat menjanjikan bagi bisnis Anda.</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Fasilitas Lengkap</h4>
+                <span>Fasilitas di dalam Pasar Senen Jaya 1&2 sangat lengkap sehingga membuat nyaman kegiatan jual beli bagi para pemilik kios dan konsumen.</span>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Pasar Senen Jaya</h3>
+              <p class="pb-3 text-left pl-3"><em>Ps. Senen, Jl. Pasar Senen No.15, RW.3, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410</em></p>
+              <p class="text-left pl-3">
+                <a href="#" class="phone"><i class="bx bx-phone-call"></i></a>+62214200007<br>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> @senenjayaofficial<br>
+                <a href="#"><i class="bx bx-main-send"></i></a> www.senenjaya.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 footer-links"id="googleMap">            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Bootslander</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
